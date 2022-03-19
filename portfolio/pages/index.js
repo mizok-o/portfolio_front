@@ -16,7 +16,6 @@ export default function Home() {
       <main className={styles.main}>
         <p>メインコンテンツ</p>
       </main>
-
       <Footer />
     </div>
   )
