@@ -1,0 +1,39 @@
+import Image from 'next/image'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import styles from '../../css/slide.module.sass'
+
+const data = [
+  { image: "slide001.png", number: "001", link: "https://wataridorimedia.com/", title: "一人旅メディア「ワタリドリ」" },
+  { image: "slide002.png", number: "002", link: "https://shindan-4f59d.web.app/", title: "あなたの海外旅行診断" },
+  { image: "slide003.png", number: "003", link: "https://dribbble.com/iemon", title: "WEBデザイン(仮想)" }
+]
+
+export default function Product() {
+  const settings = {
+    dots: false,
+    speed: 500,
+    centerMode: true,
+    centerPadding: '11%',
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  return (
+    <Slider {...settings}>
+      {data.map((item, index) => (
+        <div className={styles.slide__content} key={index}>
+          <h3 className={styles.slide__textarea}>
+            <p className={styles.slide__number}>{item.number}</p>
+            <p className={styles.slide__title}>{item.title}</p>
+          </h3>
+          <div className={styles.slide__image}>
+            <a className={styles.slide__image__link} href={item.link}>
+              <Image src={'/' + item.image} width={640} height={360} />
+            </a>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  )
+}
