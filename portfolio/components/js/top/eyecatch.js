@@ -23,6 +23,14 @@ export default function Eyecatch() {
             />
           </div>
         </div>
+        <div className={eyeStyles['eyecatch__names__container--sp']}>
+          <Image
+            className={eyeStyles['eyecatch__image--sp']}
+            src="/Group 14.png"
+            width={280}
+            height={822}
+          />
+        </div>
       </div>
       <div className={eyeStyles.eyecatch__scroll__container}>
         <div className={eyeStyles.eyecatch__scroll__bar}></div>

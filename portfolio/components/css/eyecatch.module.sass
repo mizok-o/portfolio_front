@@ -9,6 +9,9 @@
 .eyecatch__names__container
   width: 100%
 
+.eyecatch__names__container--sp
+  display: none
+
 .eyecatch__box--k, .eyecatch__box--m
   position: relative
   width: 100%
@@ -46,3 +49,15 @@
     transform: translateY(-96px)
   100%
     transform: translateY(180px)
+
+@media screen and (max-width: 840px)
+  .eyecatch__container
+    padding: 0
+  .eyecatch__names__container--sp
+    display: block
+    width: 300px
+    margin: 0 auto
+  .eyecatch__scroll__container
+    height: 56px
+  .eyecatch__names__container
+    display: none

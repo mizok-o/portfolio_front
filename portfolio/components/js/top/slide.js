@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -17,19 +16,27 @@ export default function Product() {
     centerMode: true,
     centerPadding: '11%',
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          centerPadding: 0
+        }
+      }
+    ]
   };
   return (
     <Slider {...settings}>
       {data.map((item, index) => (
         <div className={styles.slide__content} key={index}>
-          <h3 className={styles.slide__textarea}>
-            <p className={styles.slide__number}>{item.number}</p>
-            <p className={styles.slide__title}>{item.title}</p>
-          </h3>
-          <div className={styles.slide__image}>
+          <div className={styles.slide__textarea}>
+            <span className={styles.slide__number}>{item.number}</span>
+            <h3 className={styles.slide__title}>{item.title}</h3>
+          </div>
+          <div className={styles.slide__image__content}>
             <a className={styles.slide__image__link} href={item.link}>
-              <Image src={'/' + item.image} width={640} height={360} />
+              <img className={styles.slide__image} src={'/' + item.image} />
             </a>
           </div>
         </div>
