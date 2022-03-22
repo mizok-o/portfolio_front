@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
 import Header from '../components/js/header'
+import Eyecatch from '../components/js/top/eyecatch'
+import Profile from '../components/js/top/profile'
+import Works from '../components/js/top/works'
 import Footer from '../components/js/footer'
 
 export default function Home() {
@@ -14,7 +17,9 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <p>メインコンテンツ</p>
+        <Eyecatch />
+        <Profile />
+        <Works />
       </main>
       <Footer />
     </div>
