@@ -9,6 +9,23 @@ const data = [
   { image: "slide003.png", number: "003", link: "https://dribbble.com/iemon", title: "WEBデザイン(仮想)" }
 ]
 
+function Nextarrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={[styles.slick__prev, "slick-next", "slick-arrow" ]}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    ></button>
+  );
+}
+
+function Test(props) {
+  return(
+    <div>Hello</div>
+  )
+}
+
 export default function Product() {
   const settings = {
     dots: false,
@@ -17,6 +34,8 @@ export default function Product() {
     centerPadding: '11%',
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <Nextarrow />,
+    prevArrow: <Test />,
     responsive: [
       {
         breakpoint: 1200,
