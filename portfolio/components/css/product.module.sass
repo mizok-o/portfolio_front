@@ -1,0 +1,48 @@
+.product__container
+  margin: 200px 0 0
+
+.product__title__pc
+  width: 5180px
+  height: 144px
+  transform: translateX(-160px)
+
+.product__title__sp
+  display: none
+  width: 2604px
+  height: 80px
+  transform: translateX(0)
+
+.product__title__pc
+  .product__title__image
+    animation: automove 16s linear infinite
+
+.product__title__sp
+  .product__title__image
+    animation: automoveSp 12s linear infinite
+
+@keyframes automove
+  0%
+    transform: translate(0)
+  100%
+    transform: translate(-2602px)
+
+@keyframes automoveSp
+  0%
+    transform: translate(0)
+  100%
+    transform: translate(-1310px)
+
+.product__slide__container
+  display: block
+  max-width: 1120px
+  margin: 120px auto 0
+
+@media screen and (max-width: 420px)
+  .product__container
+    margin: 104px 0 0
+  .product__slide__container
+    margin-top: 40px
+  .product__title__pc
+    display: none
+  .product__title__sp
+    display: block

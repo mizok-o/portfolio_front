@@ -1,0 +1,79 @@
+.slide__textarea
+  display: flex
+  justify-content: flex-start
+  width: 640px
+  margin: 0 auto
+
+.slide__number
+  font-family: 'DIN'
+  line-height: 1.4
+  font-weight: bold
+  font-size: 40px
+
+.slide__title
+  margin-left: 16px
+  font-size: 40px
+
+.slide__image__link
+  display: block
+  width: 640px
+  margin: 0 auto
+
+.slide__image
+  width: 640px
+  height: 360px
+
+.slick__prev, .slick__next
+  overflow: hidden
+  width: 40px
+  height: 40px
+  border: 1px solid #fff
+  border-radius: 50%
+  transform: translate(0, 0)
+
+.slick__prev
+  top: 54%
+  left: -20px
+  &:hover
+    &::before
+      transform: translateX(-3px)
+
+.slick__next
+  top: 54%
+  right: 0px
+  &:hover
+    &::before
+      transform: translateX(3px)
+
+.slick__prev::before, .slick__next::before
+  content: ""
+  position: absolute
+  top: 16px
+  display: block
+  width: 16px
+  height: 8px
+  background-repeat: no-repeat
+  background-size: contain
+  transition: .2s ease-in
+  opacity: 1
+
+.slick__prev::before
+  left: 12px
+  background-image: url('/arrow-left.svg')
+
+.slick__next::before
+  right: 12px
+  background-image: url('/arrow-right.svg')
+
+@media screen and (max-width: 420px)
+  .slide__textarea
+    width: 320px
+  .slide__number
+    font-size: 20px
+  .slide__title
+    margin-left: 8px
+    font-size: 20px
+  .slide__image
+    display: block
+    width: 320px
+    height: 180px
