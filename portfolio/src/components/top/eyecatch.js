@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import eyeStyles from '../../css/eyecatch.module.sass'
+import eyeStyles from './eyecatch.module.sass'
 
 export default function Eyecatch() {
   return (

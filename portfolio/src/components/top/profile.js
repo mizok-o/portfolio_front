@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import profStyles from '../../css/profile.module.sass'
+import profStyles from './profile.module.sass'
 
 export default function Profile() {
   return (

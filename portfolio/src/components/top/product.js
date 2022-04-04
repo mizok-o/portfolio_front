@@ -1,4 +1,4 @@
-import styles from '../../css/product.module.sass'
+import styles from './product.module.sass'
 import Swiper from './slide'
 
 export default function Product() {

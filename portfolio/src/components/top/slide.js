@@ -1,7 +1,7 @@
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from '../../css/slide.module.sass'
+import styles from './slide.module.sass'
 
 // data of products
 const data = [
