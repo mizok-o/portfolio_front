@@ -39,6 +39,9 @@ export default function Product() {
     centerPadding: '11%',
     slidesToShow: 1,
     fade: true,
+    fadeEffect: {
+      crossFade: true
+    },
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
