@@ -17,8 +17,8 @@ export default function Product() {
           <img
             className={styles.product__title__image}
             src='/product-slide--sp.svg'
-            width={2604}
-            height={80}
+            // width={1302}
+            // height={40}
           />
         </div>
       </div>
