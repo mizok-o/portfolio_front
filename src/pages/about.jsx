@@ -6,7 +6,7 @@ export default function Home() {
       <div className={styles.about__eyecatch}>
         <div className={styles.about__}>
           <div className={styles.about__eyecatch__content}>
-            <img src='/about-me.jpg' className={styles.about__eyecatch__img} />
+            <img src='/about-me.jpg' className={styles.about__eyecatch__img} alt="プロフィール画像" />
           </div>
         </div>
         <h1 className={styles.about__title}>About me</h1>

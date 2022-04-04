@@ -1,11 +1,12 @@
 import headStyles from './header.module.sass'
+import Link from 'next/link'
 
 export default function Header() {
   return (
     <header className={headStyles.header}>
       <div className={headStyles.header__container}>
         <div className={headStyles.header__logo__container}>
-          <a href="/">
+          <Link href="/">
             <div className={headStyles.header__logo}>
               <svg className={headStyles.header__logo__text} width="105" height="105" viewBox="0 0 105 105" xmlns="http://www.w3.org/2000/svg">
                 <path d="M100.893 53.9743L100.71 55.3284L92.501 57.4573L92.4861 57.567L99.8309 61.806L99.6472 63.16L90.2785 61.8891L90.4225 60.8278L97.5405 61.7934L97.5529 61.7019L90.8321 57.8085L90.9711 56.7838L98.4863 54.8217L98.4987 54.7303L91.3807 53.7646L91.5246 52.7033L100.893 53.9743Z" />
@@ -40,10 +41,10 @@ export default function Header() {
               </svg>
 
             </div>
-          </a>
+          </Link>
         </div>
         <div className={headStyles.header__link__container}>
-          <a className={`${headStyles.header__link__text} ${headStyles.link_index}`} href='/about'>ABOUT</a>
+          <Link className={`${headStyles.header__link__text} ${headStyles.link_index}`} href='/about'>ABOUT</Link>
           {/* <a className={`${styles.header__link__text} ${styles.link_about}`} href='/about'>about</a> */}
         </div>
       </div>

@@ -12,9 +12,7 @@ function MyApp({ Component, pageProps }) {
         <title>Kotaroのポートフォリオサイト</title>
         <meta name="description" content="portfolio site" />
         <link rel="icon" href="/favicon.ico" />
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-</style>
+        <style>@import url(&apos;https://fonts.googleapis.com/css2?family=Cinzel&display=swap&apos;);</style>
       </Head>
       <Header />
       <div className={styles.container}>
